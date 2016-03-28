@@ -10,7 +10,7 @@ $('ul').on("click", 'span', function(event) {
 	event.stopPropagation();
 });
 
-$("input[type='text'").keypress(function(event){
+$("input[type=text]").keypress(function(event){
 	if(event.which === 13) {
 		//grab value from inuput
 		var todoText = $(this).val();
@@ -22,5 +22,5 @@ $("input[type='text'").keypress(function(event){
 });
 
 $(".fa-plus").click(function () {
-	$("input[type='text'").fadeToggle();
+	$("input[type=text]").fadeToggle();
 })
